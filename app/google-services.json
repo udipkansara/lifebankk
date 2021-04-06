@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "403545309223",
+    "firebase_url": "https://life-bank-d6554-default-rtdb.firebaseio.com",
+    "project_id": "life-bank-d6554",
+    "storage_bucket": "life-bank-d6554.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403545309223:android:1da4896637b9ecd0b90e02",
+        "android_client_info": {
+          "package_name": "com.example.lifebank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403545309223-gnrvqe7cfh5tjg6faokf2qtpjd33s6n7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lifebank",
+            "certificate_hash": "9131d36edd032822745bb3bc41b366628ce42c45"
+          }
+        },
+        {
+          "client_id": "403545309223-hubo9tdsg0nnfs2cqs0106f59rosrga3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxt8zXxSIEdWzcCCBEXYGBPCnAH7KY2Kg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403545309223-hubo9tdsg0nnfs2cqs0106f59rosrga3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

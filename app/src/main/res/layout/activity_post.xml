@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PostActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Contact:" />
+
+            <EditText
+                android:id="@+id/getMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:hint="@string/mobile"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Location:"
+
+                />
+
+            <EditText
+                android:id="@+id/getLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:hint="Enter location of place"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Blood Group:" />
+
+
+          <!--  <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <CheckBox
+                        android:id="@+id/a1"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="A+" />
+
+                    <CheckBox
+                        android:id="@+id/a2"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="A-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <CheckBox
+                        android:id="@+id/b1"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="B+" />
+
+                    <CheckBox
+                        android:id="@+id/b2"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="B-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <CheckBox
+                        android:id="@+id/ab1"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="AB+" />
+
+                    <CheckBox
+                        android:id="@+id/ab2"
+                        android:layout_width="60dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="AB-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <CheckBox
+                        android:id="@+id/o1"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="O+" />
+
+                    <CheckBox
+                        android:id="@+id/o2"
+                        android:layout_width="60dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="O-" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>-->
+
+
+             <Spinner
+                 android:id="@+id/SpinnerBlood"
+                 android:entries="@array/Blood_Group"
+                 android:layout_marginLeft="60dp"
+                 android:padding="5dp"
+                 android:inputType="text"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+        </LinearLayout>>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Choose Division:" />
+
+            <Spinner
+                android:id="@+id/SpinnerDivision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:entries="@array/division_list"
+                android:inputType="text"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/postbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/signin_btn"
+            android:gravity="center"
+            android:text="Post" />
+
+    </LinearLayout>
+
+</LinearLayout>

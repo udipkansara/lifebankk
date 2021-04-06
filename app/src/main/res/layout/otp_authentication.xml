@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:padding="25dp">
+
+            <ImageView
+                android:id="@+id/otpPic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/otp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/otpNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/otpPic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="HIIIIIII"
+                android:textColor="#0C0C0C" />
+
+            <com.goodiebag.pinview.Pinview
+                android:id="@+id/pinViewOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/otpNote"
+                android:layout_centerHorizontal="true"
+                app:cursorVisible="true"
+                app:hint="0"
+                app:inputType="number"
+                app:password="false"
+                app:pinHeight="25dp"
+                app:pinLength="6"
+                app:pinWidth="25dp" />
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pinViewOtp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/signin_btn"
+                android:text="VERIFY"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
